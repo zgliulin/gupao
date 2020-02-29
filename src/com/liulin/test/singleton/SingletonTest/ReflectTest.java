@@ -1,6 +1,6 @@
 package com.liulin.test.singleton.SingletonTest;
 
-import com.liulin.study.designpatterns.sigletondemo.LazyStaticInnerClassSingleton;
+import com.liulin.study.designpatterns.a_sigletondemo.LazyStaticInnerClassSingleton;
 
 import java.lang.reflect.Constructor;
 

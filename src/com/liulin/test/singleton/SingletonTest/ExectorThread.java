@@ -1,6 +1,6 @@
 package com.liulin.test.singleton.SingletonTest;
 
-import com.liulin.study.designpatterns.sigletondemo.LazySimpleSingleton;
+import com.liulin.study.designpatterns.a_sigletondemo.LazySimpleSingleton;
 
 /**
  * Create by DbL on 2020/2/26

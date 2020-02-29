@@ -1,6 +1,6 @@
 package com.liulin.test.singleton.SingletonTest;
 
-import com.liulin.study.designpatterns.sigletondemo.EnumSingleton;
+import com.liulin.study.designpatterns.a_sigletondemo.EnumSingleton;
 
 import java.lang.reflect.Constructor;
 

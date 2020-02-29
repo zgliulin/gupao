@@ -1,10 +1,8 @@
 package com.liulin.test.designpatterns.factorymode;
 
-import com.liulin.study.designpatterns.factorymode.factorymethod.ICourseFactory;
-import com.liulin.study.designpatterns.factorymode.factorymethod.ICouse;
-import com.liulin.study.designpatterns.factorymode.factorymethod.PythonCourseFactory;
-import com.liulin.study.designpatterns.factorymode.simplefactory.CourseFactory;
-import com.liulin.study.designpatterns.factorymode.simplefactory.JavaCouse;
+import com.liulin.study.designpatterns.b_factorymode.factorymethod.ICourseFactory;
+import com.liulin.study.designpatterns.b_factorymode.factorymethod.ICouse;
+import com.liulin.study.designpatterns.b_factorymode.factorymethod.PythonCourseFactory;
 
 /**
  * Create by DbL on 2020/2/29
