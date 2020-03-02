@@ -26,5 +26,14 @@
         <jarDirectory url="file://D:/maven-repository/reposotory" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/maven-repository/reposotory/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
