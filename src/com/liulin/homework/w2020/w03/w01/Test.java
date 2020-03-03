@@ -9,5 +9,6 @@ public class Test {
         GpMeipo gpMeipo = new GpMeipo();
         IPerson zhansan = gpMeipo.getInstance(new Zhangsan());
         zhansan.findLove();
+        zhansan.buyInsure(500000);
     }
 }

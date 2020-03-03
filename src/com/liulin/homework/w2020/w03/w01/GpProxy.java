@@ -21,6 +21,7 @@ public class GpProxy {
         try {
             // 1.动态生成原码.java文件
             String src = generateSrc(interfaces);
+            //System.out.println(src);
             //2.Java文件输出到磁盘，保存为文件$Proxy0.java
             String filePath = GpProxy.class.getResource("").getPath();
             File f = new File(filePath+"$Proxy0.java");
@@ -49,7 +50,7 @@ public class GpProxy {
 
     private static String generateSrc(Class<?>[] interfaces) {
         StringBuffer sb = new StringBuffer();
-        sb.append("package  com.liulin.homework.w2020.w03.w01;package com.liulin.homework.w2020.w03.w01;"+ln);
+        sb.append("package  com.liulin.homework.w2020.w03.w01;"+ln);
         sb.append("import com.liulin.study.designpatterns.e_proxymode.dynamicproxy.jdkproxy.IPerson;"+ln);
         sb.append("import java.lang.reflect.*;"+ln);
         sb.append("public final class $Proxy0 implements "+interfaces[0].getName()+"{"+ln);
