@@ -3,6 +3,7 @@ package com.liulin.homework.w2020.w03.w01;
 import javax.tools.JavaCompiler;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
+import java.awt.print.PrinterAbortException;
 import java.io.File;
 import java.io.FileWriter;
 import java.lang.reflect.Constructor;
@@ -48,7 +49,7 @@ public class GpProxy {
 
     private static String generateSrc(Class<?>[] interfaces) {
         StringBuffer sb = new StringBuffer();
-        sb.append("package com.liulin.study.designpatterns.e_proxymode.dynamicproxy.gpproxy.proxy;"+ln);
+        sb.append("package  com.liulin.homework.w2020.w03.w01;package com.liulin.homework.w2020.w03.w01;"+ln);
         sb.append("import com.liulin.study.designpatterns.e_proxymode.dynamicproxy.jdkproxy.IPerson;"+ln);
         sb.append("import java.lang.reflect.*;"+ln);
         sb.append("public final class $Proxy0 implements "+interfaces[0].getName()+"{"+ln);
@@ -66,12 +67,19 @@ public class GpProxy {
             for (int i = 0; i <params.length ; i++) {
                 Class clazz = params[i];
                 String type = clazz.getName();
-
+                paramNames.append(type+" "+ "arg"+i);
+                paramValues.append("arg"+i);
+                paramClasses.append(clazz.getName()+".class");
+                if(i > 0 && i < params.length-1){
+                    paramNames.append(",");
+                    paramClasses.append(",");
+                    paramValues.append(",");
+                }
             }
-            sb.append("public "+ m.getReturnType().getName()+ " "+ m.getName()+"(){"+ln);
+            sb.append("public "+ m.getReturnType().getName()+ " "+ m.getName()+"("+paramNames.toString()+"){"+ln);
                 sb.append("try{ " + ln);
-                sb.append(" Method m = "+interfaces[0].getName()+".class.getMethod(\""+m.getName()+"\",new Class[]{});"+ln);
-                sb.append("this.h.invoke(this,m,new Object[]{});"+ln);
+                sb.append(" Method m = "+interfaces[0].getName()+".class.getMethod(\""+m.getName()+"\",new Class[]{"+paramClasses.toString() +"});"+ln);
+                sb.append("this.h.invoke(this,m,new Object[]{"+paramValues +"});"+ln);
                 sb.append("return; "+ln);
                 sb.append("}"+ ln);
                 sb.append("catch(Error _ex) { }" +ln);

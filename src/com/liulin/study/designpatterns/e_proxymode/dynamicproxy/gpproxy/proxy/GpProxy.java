@@ -61,14 +61,14 @@ public class GpProxy {
         for (Method m : interfaces[0].getMethods()) {
             Class<?> [] params = m.getParameterTypes();
 
-            StringBuilder paramNames = new StringBuilder();
+            /*StringBuilder paramNames = new StringBuilder();
             StringBuilder paramValues = new StringBuilder();
             StringBuilder paramClasses = new StringBuilder();
             for (int i = 0; i <params.length ; i++) {
                 Class clazz = params[i];
                 String type = clazz.getName();
 
-            }
+            }*/
             sb.append("public "+ m.getReturnType().getName()+ " "+ m.getName()+"(){"+ln);
                 sb.append("try{ " + ln);
                 sb.append(" Method m = "+interfaces[0].getName()+".class.getMethod(\""+m.getName()+"\",new Class[]{});"+ln);

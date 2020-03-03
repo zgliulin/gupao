@@ -5,5 +5,5 @@ package com.liulin.study.designpatterns.e_proxymode.dynamicproxy.gpproxy.client;
  */
 public interface IPerson {
     void findLove();
-    void buyInsure(double price);
+    //void buyInsure(double price);
 }
