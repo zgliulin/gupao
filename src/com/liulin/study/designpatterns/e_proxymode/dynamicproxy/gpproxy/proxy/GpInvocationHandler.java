@@ -1,6 +1,5 @@
-package com.liulin.study.designpatterns.e_proxymode.gpproxy;
+package com.liulin.study.designpatterns.e_proxymode.dynamicproxy.gpproxy.proxy;
 
-import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 /**
