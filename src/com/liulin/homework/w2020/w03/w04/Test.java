@@ -7,7 +7,8 @@ public class Test {
     public static void main(String[] args) {
         GupaoMenu gupaoMenu;
         gupaoMenu = new BaseGupaoMenu();
-        gupaoMenu = new VipGupaoMenuDecorator(gupaoMenu);
-        System.out.println("VIP的咕泡的菜单有："+gupaoMenu.getMenu());
+        System.out.println("未登录的的咕泡的菜单有："+gupaoMenu.getMenu());
+        gupaoMenu = new LoginGupaoMenuDecorator(gupaoMenu);
+        System.out.println("登录后的的咕泡的菜单有："+gupaoMenu.getMenu());
     }
 }

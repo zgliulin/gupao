@@ -3,10 +3,10 @@ package com.liulin.homework.w2020.w03.w04;
 /**
  * Create by DbL on 2020/3/4
  */
-public class VipGupaoMenuDecorator extends GupaoMenu {
+public class LoginGupaoMenuDecorator extends GupaoMenu {
     private GupaoMenu gupaoMenu;
 
-    public VipGupaoMenuDecorator(GupaoMenu gupaoMenu) {
+    public LoginGupaoMenuDecorator(GupaoMenu gupaoMenu) {
         this.gupaoMenu = gupaoMenu;
     }
 
