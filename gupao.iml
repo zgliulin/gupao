@@ -10,48 +10,20 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/maven-repository/reposotory/com/alibaba/fastjson/1.2.56/fastjson-1.2.56.jar!/" />
+          <root url="file://G:/Repository" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+        <jarDirectory url="file://G:/Repository" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://D:/maven-repository/reposotory" />
+          <root url="jar://G:/Repository/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://D:/maven-repository/reposotory" recursive="false" />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/maven-repository/reposotory/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/maven-repository/reposotory/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://D:/maven-repository/reposotory" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://D:/maven-repository/reposotory" recursive="false" />
       </library>
     </orderEntry>
   </component>
